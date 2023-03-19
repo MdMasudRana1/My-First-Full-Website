@@ -1,0 +1,38 @@
+#service{
+      width: 100%;
+      position: relative;
+      margin: 40px 0;
+       .row{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+             .col{
+                  flex-basis: 245px; 
+                   .single-service{
+                        border: 2px solid #ccc;
+                        padding: 35px;
+                        text-align: center;
+                        border-radius: 10px;
+                         h2{
+                              color: #111;
+                              font-size: 22px;
+                         }
+                              p{
+                                    color: #111;
+                                    margin: 10px;
+                              }
+                                    button{
+                                          padding: 10px 15px;
+                                          border-radius: 30px;
+                                          font-size: 17px;
+                                          border: 0;
+                                          outline: 0;
+                                          background: #000;
+                                          color: #fff;
+                                    }
+                           
+                   }
+             }
+       }
+}

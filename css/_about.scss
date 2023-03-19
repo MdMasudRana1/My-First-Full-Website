@@ -1,0 +1,69 @@
+#about{
+      width: 100%;
+      height: auto;
+      margin: 120px 0;
+
+      .about-overview{
+            width: 100%;
+            // height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+                  .single-about{
+                        .img-thumbnail{
+                              img{
+                                    width: 100%;
+                              }
+                        }
+                  }
+                  .about-text{
+                        h2{
+                              font-size: 30px;
+                              margin-bottom: 20px;
+                              color: #333;
+                              position: relative;
+                              z-index: 1;
+
+                              &::after{
+                                    content: 'About Me';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    left: 0;
+                                    top: -30%;
+                                    font-size: 60px;
+                                    z-index: -1;
+                                    color: #ccc;
+
+                              }
+                        }
+                        h3{
+                              font-size: 25px;
+                              color: #111;
+                        }
+                        p{
+                              font-size: 17px;
+                              line-height: 1.3;
+                              margin: 10px 0;
+                              color: #333;
+                        }
+                        .btn{
+                              display: inline-block;
+                              border: 1.5px solid #333;
+                              padding: 8px 13px;
+                              background: #000;
+                              color: #fff;
+                              border-radius: 10px;
+                              margin-top: 10px;
+                        }
+                  }
+                  .abt-img{
+                        flex-basis: 35%;
+                  }
+                  .abt-txt{
+                        flex-basis: 55%;
+                  }
+      }
+}

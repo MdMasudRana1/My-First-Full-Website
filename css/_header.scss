@@ -1,0 +1,101 @@
+header{
+      width: 100%;
+      position: relative;
+      height: 100vh;
+      
+      nav{
+            width: 100%;
+            background: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 999;
+
+            
+
+             .logo{
+                  flex-basis: 45%;
+                    a{
+                        img{
+                              width: 120px;
+                              cursor: pointer;
+                        }
+                    }
+             }
+                  .menu{
+                        
+                        flex-basis:40%;
+                      display: flex;
+                      justify-content: space-around;
+                      position: relative;
+                        
+                        li{
+                            a{
+                               color: #fff;
+                               text-transform: capitalize;
+                               font-size: 20px;
+                               position: relative;
+                               
+                                    &::after{
+                                          content: '';
+                                          width: 0%;
+                                          height: 3px;
+                                          position: absolute;
+                                          background: greenyellow;
+                                          left: 0;
+                                          bottom: -5px;
+                                          transition: width 0.4s;
+                                    }
+                                    &:hover::after{
+                                          width: 100%;
+                                    }
+                            }  
+                               
+                              a:hover{
+                                    color: greenyellow;
+                              }
+                          }
+                   }
+                  
+           
+                     .mobile-menu{
+                          color: #fff;
+                          font-size: 20px;
+                          display: none;
+                          
+                     }
+      }
+
+      .hero-section{
+            position: relative;
+            width: 100%;
+            height: calc(100% - 100px);
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/img/bg.jpg') center no-repeat;
+            background-size: cover;
+
+             .row{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+             }
+            h3{
+                color: #fff;
+                font-size: 50px;
+                text-align: center;
+
+
+            }
+             p{
+                  color: #fff;
+                  font-size: 20px;
+                  text-align: center;
+                  margin: 20px 0 ;
+             }
+       }
+}
+     
